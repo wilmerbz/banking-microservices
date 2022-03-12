@@ -31,9 +31,9 @@ namespace Banking.CQRS.Core.Domain
         {
             try
             {
-                Type eventType = eventToApply.GetType();
+                Type applyEventParameterType = eventToApply.GetType();
 
-                var applyMethod = GetType().GetMethod(ApplyMethodName, new[] { eventType });
+                var applyMethod = GetType().GetMethod(ApplyMethodName, new[] { applyEventParameterType });
 
                 applyMethod?.Invoke(this, new object[] { eventToApply });
 

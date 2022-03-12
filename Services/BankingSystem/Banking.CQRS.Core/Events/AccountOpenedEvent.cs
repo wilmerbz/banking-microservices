@@ -6,11 +6,11 @@
 
         public string AccountType { get; set; } = string.Empty;
 
-        public DateOnly CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
 
         public double OpeningBalance { get; set; }
 
-        public AccountOpenedEvent(string id, string accountHolder, string accountType, DateOnly createdDate, double openingBalance) : base(id)
+        public AccountOpenedEvent(string id, string accountHolder, string accountType, DateTime createdDate, double openingBalance) : base(id)
         {
             AccountHolder = accountHolder;
             AccountType = accountType;
