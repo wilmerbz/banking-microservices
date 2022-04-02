@@ -1,4 +1,5 @@
 ﻿using Banking.Account.Command.Application.Features.BankAccounts.Commands;
+using Banking.Account.Command.Application.Features.BankAccounts.Commands.OpenAccount;
 using Banking.CQRS.Core.Domain;
 using Banking.CQRS.Core.Events;
 using System;

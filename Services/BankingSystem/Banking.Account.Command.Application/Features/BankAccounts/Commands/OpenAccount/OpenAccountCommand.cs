@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Banking.Account.Command.Application.Features.BankAccounts.Commands
+namespace Banking.Account.Command.Application.Features.BankAccounts.Commands.OpenAccount
 {
     public class OpenAccountCommand : IRequest<bool>
     {
